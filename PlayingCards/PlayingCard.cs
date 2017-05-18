@@ -47,7 +47,7 @@ namespace PlayingCards
 
         /* Jeff K. 5/17/2017. Last Code Revision 5/17/2017.
          * Chose not fully implement GetHashCode while overriding the Equals method
-         * because the properties of the card will not be changing when they are set as they are set to ReadOnly.
+         * because the properties of the card will not be changing once they are set.
          * Only needed to be able to compare that Suit and the Rank.
          */
         public override int GetHashCode()

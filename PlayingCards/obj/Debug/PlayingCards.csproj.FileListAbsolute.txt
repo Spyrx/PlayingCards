@@ -4,3 +4,9 @@ c:\users\jkillius.bli\documents\visual studio 2017\Projects\PlayingCards\Playing
 c:\users\jkillius.bli\documents\visual studio 2017\Projects\PlayingCards\PlayingCards\obj\Debug\PlayingCards.csprojResolveAssemblyReference.cache
 c:\users\jkillius.bli\documents\visual studio 2017\Projects\PlayingCards\PlayingCards\obj\Debug\PlayingCards.exe
 c:\users\jkillius.bli\documents\visual studio 2017\Projects\PlayingCards\PlayingCards\obj\Debug\PlayingCards.pdb
+C:\Users\Jeff\Source\Repos\PlayingCards\PlayingCards\bin\Debug\PlayingCards.exe.config
+C:\Users\Jeff\Source\Repos\PlayingCards\PlayingCards\bin\Debug\PlayingCards.exe
+C:\Users\Jeff\Source\Repos\PlayingCards\PlayingCards\bin\Debug\PlayingCards.pdb
+C:\Users\Jeff\Source\Repos\PlayingCards\PlayingCards\obj\Debug\PlayingCards.csprojResolveAssemblyReference.cache
+C:\Users\Jeff\Source\Repos\PlayingCards\PlayingCards\obj\Debug\PlayingCards.exe
+C:\Users\Jeff\Source\Repos\PlayingCards\PlayingCards\obj\Debug\PlayingCards.pdb
