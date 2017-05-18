@@ -7,6 +7,9 @@ namespace PlayingCards
     {
         static void Main(string[] args)
         {
+            /* Jeff K. 5/17/2017. Last Code Revision 5/17/2017.
+             * Added a small user interface for manual testing in addition to the unit tests, just to be sure it was working as expected.
+             */
             CardDeck myDeck = new CardDeck();
 
             int input = 0;

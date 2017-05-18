@@ -18,11 +18,11 @@ namespace PlayingCards
             return Deck;
         }
 
-        /*
-        Pick a random number between 0 and the array length.
-        wap the element at random index and swap it with the end of the array.
-        Place end item at the random index.
-        Provides an inplace shuffle withou having to create a second array.
+        /* Jeff K. 5/17/2017. Last Code Revision 5/17/2017.
+        *Pick a random number between 0 and the array length.
+        *swap the element at random index and swap it with the end of the array.
+        *Place end item at the random index.
+        *Provides an inplace shuffle withou having to create a second array.
         */
         public void ShuffleDeck()
         {
@@ -55,6 +55,12 @@ namespace PlayingCards
 
         public void CreateDeck()
         {
+            /* Jeff K. 5/17/2017. Last code Revision 5/17/2017.
+             * Went with a double loop to make the code easier to read.
+             * Simply creates 13 cards in each suit and adds them to the array of Playing Cards.
+             * Chose an array because the extra over head to add and remove in the middle of a list
+             * during the shuffle method didn't seem necessary.
+             */
             int arrayIndex = 0;
             for (int i = 0; i < 4; i++)
             {
