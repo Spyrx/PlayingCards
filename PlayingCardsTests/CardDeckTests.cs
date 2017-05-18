@@ -1,6 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using PlayingCards;
-using System;
 
 
 namespace PlayingCards.Tests
