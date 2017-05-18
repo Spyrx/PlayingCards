@@ -70,7 +70,6 @@
       <DependentUpon>CardWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="PlayingCard.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
