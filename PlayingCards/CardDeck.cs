@@ -4,7 +4,7 @@ namespace PlayingCards
 {
     public class CardDeck
     {
-        private Random random = new Random();
+        private static Random random = new Random();
 
         private PlayingCard[] Deck = new PlayingCard[52];
 
@@ -40,9 +40,21 @@ namespace PlayingCards
             }
         }
 
-        public void SortDeck()
+        public void SortDeck(bool isAceHigh)
         {
-            Array.Sort(Deck);
+            if (!isAceHigh)
+                Array.Sort(Deck);
+            else
+            {
+                for (int i = 0; i < 52; i++)
+                {
+                    if (Deck[i].Rank == CardRank.Ace)
+                    {
+                        Deck[i] = new PlayingCard((int)Deck[i].Suit, (int)CardRank.Thirteen);
+                    }
+                }
+                Array.Sort(Deck);
+            }
         }
 
         public void PrintDeck()

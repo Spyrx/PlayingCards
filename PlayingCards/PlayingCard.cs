@@ -18,7 +18,8 @@ namespace PlayingCards
         Six, Seven, Eight, Nine, Ten,
         Jack,
         Queen,
-        King
+        King,
+        Thirteen
     }
 
     public class PlayingCard : IComparable<PlayingCard>

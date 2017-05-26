@@ -24,7 +24,7 @@ namespace PlayingCards
                         myDeck.ShuffleDeck();
                         break;
                     case 2:
-                        myDeck.SortDeck();
+                        myDeck.SortDeck(true);
                         break;
                     case 3:
                         myDeck.PrintDeck();

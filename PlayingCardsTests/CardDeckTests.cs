@@ -16,6 +16,17 @@ namespace PlayingCards.Tests
             shuffledDeck.ShuffleDeck();
             CollectionAssert.AreNotEqual(sortedDeck.GetDeck(), shuffledDeck.GetDeck());
         }
+        [TestMethod()]
+        public void CheckRandom()
+        {
+            CardDeck deckOne = new CardDeck();
+            CardDeck deckTwo = new CardDeck();
+
+            deckOne.ShuffleDeck();
+            deckTwo.ShuffleDeck();
+
+            CollectionAssert.AreNotEqual(deckOne.GetDeck(), deckTwo.GetDeck());
+        }
 
         [TestMethod()]
         public void SortDeckTest()
@@ -25,9 +36,33 @@ namespace PlayingCards.Tests
             shuffledDeck.ShuffleDeck();
             CollectionAssert.AreNotEqual(sortedDeck.GetDeck(), shuffledDeck.GetDeck());
 
-            shuffledDeck.SortDeck();
+            shuffledDeck.SortDeck(false);
 
             CollectionAssert.AreEqual(sortedDeck.GetDeck(), shuffledDeck.GetDeck());
+        }
+
+        [TestMethod()]
+        public void SortAceHigh()
+        {
+            PlayingCard[] controlDeck = new PlayingCard[52] {
+            new PlayingCard(0,1), new PlayingCard(0, 2),
+            new PlayingCard(0, 3), new PlayingCard(0,4), new PlayingCard(0, 5), new PlayingCard(0, 6), new PlayingCard(0,7),
+            new PlayingCard(0, 8), new PlayingCard(0,9), new PlayingCard(0, 10), new PlayingCard(0,11), new PlayingCard(0, 12), new PlayingCard(0, 13),
+            new PlayingCard(1,1), new PlayingCard(1, 2),
+            new PlayingCard(1, 3), new PlayingCard(1,4), new PlayingCard(1, 5), new PlayingCard(1, 6), new PlayingCard(1,7),
+            new PlayingCard(1, 8), new PlayingCard(1,9), new PlayingCard(1, 10), new PlayingCard(1,11), new PlayingCard(1, 12), new PlayingCard(1, 13),
+            new PlayingCard(2,1), new PlayingCard(2, 2),
+            new PlayingCard(2, 3), new PlayingCard(2,4), new PlayingCard(2, 5), new PlayingCard(2, 6), new PlayingCard(2,7),
+            new PlayingCard(2, 8), new PlayingCard(2,9), new PlayingCard(2, 10), new PlayingCard(2,11), new PlayingCard(2, 12), new PlayingCard(2, 13),
+            new PlayingCard(3,1), new PlayingCard(3, 2),
+            new PlayingCard(3, 3), new PlayingCard(3,4), new PlayingCard(3, 5), new PlayingCard(3, 6), new PlayingCard(3,7),
+            new PlayingCard(3, 8), new PlayingCard(3,9), new PlayingCard(3, 10), new PlayingCard(3,11), new PlayingCard(3, 12), new PlayingCard(3, 13)
+            };
+
+            CardDeck deck = new CardDeck();
+            deck.ShuffleDeck();
+            deck.SortDeck(true);
+            CollectionAssert.AreEqual(controlDeck, deck.GetDeck());
         }
 
         [TestMethod()]
