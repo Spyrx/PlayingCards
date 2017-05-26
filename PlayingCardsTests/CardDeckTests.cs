@@ -66,6 +66,21 @@ namespace PlayingCards.Tests
         }
 
         [TestMethod()]
+        public void SortAceHighCheck()
+        {
+            CardDeck deckOne = new CardDeck();
+            CardDeck deckTwo = new CardDeck();
+
+            deckOne.ShuffleDeck();
+            deckTwo.ShuffleDeck();
+
+            deckOne.SortDeck(false);
+            deckTwo.SortDeck(true);
+
+            CollectionAssert.AreNotEqual(deckOne.GetDeck(), deckTwo.GetDeck());
+        }
+
+        [TestMethod()]
         public void HasCorrectNumberOfCards()
         {
             CardDeck cardDeck = new CardDeck();
