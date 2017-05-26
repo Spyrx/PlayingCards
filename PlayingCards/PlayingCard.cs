@@ -13,13 +13,13 @@ namespace PlayingCards
 
     public enum CardRank
     {
-        Ace,
+        AceLow,
         Two, Three, Four, Five,
         Six, Seven, Eight, Nine, Ten,
         Jack,
         Queen,
         King,
-        Thirteen
+        AceHigh
     }
 
     public class PlayingCard : IComparable<PlayingCard>

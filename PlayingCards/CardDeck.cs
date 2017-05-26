@@ -48,9 +48,9 @@ namespace PlayingCards
             {
                 for (int i = 0; i < 52; i++)
                 {
-                    if (Deck[i].Rank == CardRank.Ace)
+                    if (Deck[i].Rank == CardRank.AceLow)
                     {
-                        Deck[i] = new PlayingCard((int)Deck[i].Suit, (int)CardRank.Thirteen);
+                        Deck[i] = new PlayingCard((int)Deck[i].Suit, (int)CardRank.AceHigh);
                     }
                 }
                 Array.Sort(Deck);
