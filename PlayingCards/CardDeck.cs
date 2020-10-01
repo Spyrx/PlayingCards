@@ -19,10 +19,10 @@ namespace PlayingCards
         }
 
         /*
-        Pick a random number between 0 and the array length.
-        Select the element at random index and swap it with the end of the array.
-        Place end item at the random index.
-        Provides an inplace shuffle without having to create a second array.
+        * Pick a random number between 0 and the array length.
+        * Select the element at random index and swap it with the end of the array.
+        * Place end item at the random index.
+        * Provides an inplace shuffle without having to create a second array.
         */
         public void ShuffleDeck()
         {
