@@ -45,7 +45,7 @@ namespace PlayingCards
         
         }
 
-        //Included because of Equals Override. No plans on using HashCode.
+        // Included because of Equals Override. No plans on using HashCode.
         public override int GetHashCode()
         {
             return base.GetHashCode();
